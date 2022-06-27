@@ -2,7 +2,7 @@ import { Disclosure, Transition } from '@headlessui/react'
 import { ChevronRightIcon } from '@heroicons/react/solid'
 
 import { faqdata } from '@/data/faqdata'
-import React from 'react'
+import { Fragment } from 'react'
 
 export default function Accordion() {
   return (
@@ -21,7 +21,7 @@ export default function Accordion() {
               </Disclosure.Button>
               <Transition
                 show={open}
-                as={React.Fragment}
+                as={Fragment}
                 enter="transition duration-300 ease-out translate-y-0"
                 enterFrom="transform opacity-0 translate-y-0.5"
                 enterTo="transform opacity-100 translate-y-0"
@@ -33,7 +33,7 @@ export default function Accordion() {
                   {answers &&
                     answers.map(({ icon, label }, index) => (
                       <li
-                        className="flex cursor-pointer list-none items-center hover:bg-gray-100 p-2 rounded-lg"
+                        className="flex cursor-pointer list-none items-center rounded-lg p-2 hover:bg-gray-100"
                         key={index}
                         onClick={() => close()}
                       >

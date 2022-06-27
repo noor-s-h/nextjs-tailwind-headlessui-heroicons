@@ -1,15 +1,13 @@
-import Logo from "./Logo";
-import HamBurger from './HamBurger'
-import MobileNavigation from './MobileNavigation'
-import DesktopNavigation from './DesktopNavigation'
+import Logo from './Logo'
+import DesktopNavMenu from './DesktopNavMenu'
+import MobileNav from './MobileNav'
 
 export default function Header() {
   return (
-    <nav className="flex items-center justify-between h-16">
+    <nav className="flex h-16 items-center justify-between border-b bg-white">
       <Logo />
-      <HamBurger />
-      <MobileNavigation />
-      <DesktopNavigation />
+      <MobileNav />
+      <DesktopNavMenu />
     </nav>
   )
 }

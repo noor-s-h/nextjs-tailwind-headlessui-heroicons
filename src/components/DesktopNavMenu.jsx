@@ -1,3 +1,3 @@
-export default function DesktopNavigation() {
+export default function DesktopNavMenu() {
   return <ul className="hidden md:flex">desktopnavlink</ul>
 }

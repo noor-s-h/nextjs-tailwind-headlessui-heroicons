@@ -1,3 +1,14 @@
-export default function HamBurger() {
-  return <div className="md:hidden">menu</div>
+import { MenuIcon } from '@heroicons/react/solid'
+import { XIcon } from '@heroicons/react/solid'
+
+export default function HamBurger({ open }) {
+  return (
+    <>
+      {open ? (
+        <XIcon />
+      ) : (
+        <MenuIcon />
+      )}
+    </>
+  )
 }

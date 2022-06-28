@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
-export default function Dropdown({ data, onClick }) {
+export default function SubMenu({ data, onClick }) {
   return (
     <>
       {data.map(({ label, href }, index) => (
-        <li key={index} className="md:px-2">
+        <li key={index}>
           <Link href={href}>
             <a
               className="flex flex-1 rounded-lg p-2 hover:bg-gray-100"
